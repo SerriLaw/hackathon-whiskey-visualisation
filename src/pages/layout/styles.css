@@ -3,8 +3,7 @@
 }
 
 #inner_content {
-	max-width: 934px;
+	max-width: 1000px;
 	margin: 0 auto;
-	background-color: #000;
-	color: whitesmoke;
+	color: black;
 }
