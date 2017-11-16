@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import whiskey from '../../config/whiskey';
 import './styles.css';
+import bottle from './bottle.png';
 
 class HomePage extends Component {
 	constructor(props) {
@@ -16,9 +16,8 @@ class HomePage extends Component {
 
 	render() {
 		return (
-			<div>
-				hello world <br />
-				{JSON.stringify(whiskey)}
+			<div className="home-wrap">
+				<img className="bottle-logo" src={bottle} />
 			</div>
 		);
 	}

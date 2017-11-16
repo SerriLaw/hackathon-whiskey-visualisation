@@ -1,22 +1,10 @@
-#not-sso-callback {
+.home-wrap {
+	width: 100%;
+	display: block;
 	text-align: center;
 }
 
-#not-sso-callback img {
-	vertical-align: bottom;
-	border: none;
-	margin-left: 2px;
-}
-
-#not-sso-callback a {
-	text-decoration: underline;
-}
-
-#logout-redirect {
-	padding: 10px 0;
-	display: inline-block;
-	color: #fbfaf8;
-	font-size: 12px;
-	text-decoration: none !important;
-	letter-spacing: 1.1px;
+.bottle-logo {
+	width: 20%;
+	margin: 50px auto 20px auto;
 }
