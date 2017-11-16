@@ -18,9 +18,9 @@ class MapPage extends Component {
 		this.setState({ showModal: true, selectedWhiskey: whiskey });
 	};
 
-	handleClose() {
+	handleClose = whiskey => {
 		this.setState({ showModal: false, selectedWhiskey: null });
-	}
+	};
 
 	render() {
 		return (
