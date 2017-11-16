@@ -8,11 +8,8 @@
   },
   "dependencies": {
     "chart.js": "^2.7.1",
-    "html-to-react": "^1.2.9",
-    "mi9-sso-sdk": "^2.4.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-input-mask": "^0.9.1",
     "react-router-dom": "^4.1.1"
   },
   "author": "",
