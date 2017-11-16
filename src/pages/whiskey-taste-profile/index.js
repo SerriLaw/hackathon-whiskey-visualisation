@@ -59,7 +59,7 @@ class WhiskeyTasteProfilePage extends Component {
 								<CartesianGrid strokeDasharray="3 3" />
 								<Scatter
 									data={this.state.data}
-									fill="#8D2E05"
+									fill="#592403"
 									animationBegin="10"
 								/>
 								<Tooltip cursor={{ strokeDasharray: '3 3' }} />

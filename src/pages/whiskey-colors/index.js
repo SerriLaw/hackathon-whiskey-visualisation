@@ -34,10 +34,10 @@ class WhiskeyColorsPage extends Component {
 		});
 
 		const colorArray = [
-			{ name: 'Light Gold', value: lightGoldCount, color: '#f9b740' },
-			{ name: 'Dark Gold', value: darkGoldCount, color: '#D1790E' },
-			{ name: 'Light Amber', value: lightAmberCount, color: '#9e4720' },
-			{ name: 'Dark Amber', value: darkAmberCount, color: '#8D2E05' },
+			{ name: 'Light Gold', value: lightGoldCount, color: '#ECC03F' },
+			{ name: 'Dark Gold', value: darkGoldCount, color: '#D98B16' },
+			{ name: 'Light Amber', value: lightAmberCount, color: '#9A4F17' },
+			{ name: 'Dark Amber', value: darkAmberCount, color: '#592403' },
 			{ name: 'Clear', value: clearCount, color: '#ECDCBA' }
 		];
 

@@ -13,7 +13,7 @@ const customStyles = {
 	},
 	content: {
 		padding: '10px 20px 20px 20px',
-		border: '3px solid #9e4720'
+		border: '3px solid #9A4F17'
 	}
 };
 
@@ -33,19 +33,19 @@ class MapPage extends Component {
 		console.log(whiskey);
 		switch (whiskey.colour) {
 			case 'dark amber':
-				colour = '#8D2E05';
+				colour = '#592403';
 				break;
 			case 'light amber':
-				colour = '#9e4720';
+				colour = '#9A4F17';
 				break;
 			case 'clear':
 				colour = '#ECDCBA';
 				break;
 			case 'light gold':
-				colour = '#f9b740';
+				colour = '#ECC03F';
 				break;
 			case 'dark gold':
-				colour = '#D1790E';
+				colour = '#D98B16';
 				break;
 		}
 
