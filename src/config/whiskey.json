@@ -14,6 +14,8 @@
 		"rating_overall": 7,
 		"colour": "dark amber",
 		"type": "single malt",
+		"light_rich": 1,
+		"delicate_smoky": 4,
 		"url": "http://whiskeynerds.com/westward-american-single-malt/"
 	},
 	{
@@ -31,6 +33,8 @@
 		"rating_overall": 7,
 		"colour": "light gold",
 		"type": "single grain",
+		"light_rich": 2,
+		"delicate_smoky": 2,
 		"url": "http://whiskeynerds.com/the-chita-suntory-whisky/"
 	},
 	{
@@ -48,6 +52,8 @@
 		"rating_overall": 5,
 		"colour": "light amber",
 		"type": "malt",
+		"light_rich": 3,
+		"delicate_smoky": 5,
 		"url":
 			"http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
 	},
@@ -66,6 +72,8 @@
 		"rating_overall": 4,
 		"colour": "clear",
 		"type": "malt",
+		"light_rich": 4,
+		"delicate_smoky": 2,
 		"url":
 			"http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
 	},
@@ -84,6 +92,8 @@
 		"rating_overall": 8,
 		"colour": "light gold",
 		"type": "single malt",
+		"light_rich": 5,
+		"delicate_smoky": 4,
 		"url": "http://whiskeynerds.com/dalwhinnie-15-year-old/"
 	},
 	{
@@ -101,6 +111,8 @@
 		"rating_overall": 7,
 		"colour": "dark gold",
 		"type": "single malt",
+		"light_rich": 6,
+		"delicate_smoky": 6,
 		"url": "http://whiskeynerds.com/kilchoman-sanaig/"
 	},
 	{
@@ -118,6 +130,8 @@
 		"rating_overall": 7,
 		"colour": "light gold",
 		"type": "single malt",
+		"light_rich": 7,
+		"delicate_smoky": 8,
 		"url": "http://whiskeynerds.com/old-pulteney-12-years/"
 	},
 	{
@@ -135,6 +149,8 @@
 		"rating_overall": 7,
 		"colour": "light gold",
 		"type": "blend",
+		"light_rich": 8,
+		"delicate_smoky": 9,
 		"url": "http://whiskeynerds.com/jameson-18-limited-reserve/"
 	},
 	{
@@ -152,6 +168,8 @@
 		"rating_overall": 6,
 		"colour": "dark gold",
 		"type": "single malt",
+		"light_rich": 9,
+		"delicate_smoky": 6,
 		"url": "http://whiskeynerds.com/hellyers-road-distillery-pinot-noir-finish/"
 	},
 	{
@@ -169,6 +187,8 @@
 		"rating_overall": 6,
 		"colour": "light gold",
 		"type": "single malt",
+		"light_rich": 10,
+		"delicate_smoky": 7,
 		"url": "http://whiskeynerds.com/glen-parker-single-malt/"
 	},
 	{
@@ -186,6 +206,8 @@
 		"rating_overall": 5,
 		"colour": "light amber",
 		"type": "blend",
+		"light_rich": 1,
+		"delicate_smoky": 7,
 		"url": "http://whiskeynerds.com/highland-black/"
 	},
 	{
@@ -203,6 +225,8 @@
 		"rating_overall": 7,
 		"colour": "light gold",
 		"type": "single malt",
+		"light_rich": 2,
+		"delicate_smoky": 6,
 		"url": "http://whiskeynerds.com/glenmorangie-tusail-private-edition-2015/"
 	},
 	{
@@ -220,6 +244,8 @@
 		"rating_overall": 7,
 		"colour": "dark amber",
 		"type": "blend",
+		"light_rich": 3,
+		"delicate_smoky": 3,
 		"url": "http://whiskeynerds.com/michel-couvreur-overaged-malt-whisky/"
 	},
 	{
@@ -237,6 +263,8 @@
 		"rating_overall": 8,
 		"colour": "dark gold",
 		"type": "single malt",
+		"light_rich": 4,
+		"delicate_smoky": 8,
 		"url": "http://whiskeynerds.com/lagavulin-16-year-old/"
 	},
 	{
@@ -254,6 +282,8 @@
 		"rating_overall": 7,
 		"colour": "light gold",
 		"type": "blend",
+		"light_rich": 5,
+		"delicate_smoky": 9,
 		"url": "http://whiskeynerds.com/hybrid-whisk-e-y/"
 	},
 	{
@@ -271,6 +301,8 @@
 		"rating_overall": 8,
 		"colour": "light gold",
 		"type": "single malt",
+		"light_rich": 6,
+		"delicate_smoky": 2,
 		"url": "http://whiskeynerds.com/hakushu-12-years/"
 	},
 	{
@@ -288,6 +320,8 @@
 		"rating_overall": 6,
 		"colour": "dark amber",
 		"type": "single malt",
+		"light_rich": 7,
+		"delicate_smoky": 4,
 		"url": "http://whiskeynerds.com/jura-elixir-12-year-old/"
 	},
 	{
@@ -305,6 +339,8 @@
 		"rating_overall": 7,
 		"colour": "dark gold",
 		"type": "single malt",
+		"light_rich": 8,
+		"delicate_smoky": 0,
 		"url": "http://whiskeynerds.com/auchentoshan-springwood/"
 	},
 	{
@@ -322,6 +358,8 @@
 		"rating_overall": 7,
 		"colour": "dark amber",
 		"type": "single malt",
+		"light_rich": 9,
+		"delicate_smoky": 3,
 		"url": "http://whiskeynerds.com/amrut-cask-strength/"
 	}
 ]

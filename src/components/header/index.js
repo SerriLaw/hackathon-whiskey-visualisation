@@ -10,6 +10,9 @@ const Header = () => (
 		<nav>
 			<ul className="navigation">
 				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
 					<a href="/map">Whiskey Map</a>
 				</li>
 				<li>

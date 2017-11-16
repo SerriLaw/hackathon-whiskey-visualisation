@@ -6,17 +6,21 @@ import {
 	GoogleMap,
 	Marker
 } from 'react-google-maps';
-import whiskies from '../../config/whiskey';
+import { MarkerClusterer } from 'react-google-maps/lib/components/addons/MarkerClusterer';
 import mapStyles from './map-styles';
-import markerIcon from './marker.jpg';
+import markerIcon from './bottle-small.png';
 
-const renderMarkers = () =>
-	whiskies.map(whiskey => (
-		<Marker
-			position={{ lat: whiskey.latitude, lng: whiskey.longitude }}
-			icon={markerIcon}
-		/>
-	));
+const renderMarkers = ({ whiskies, handleClick }) => (
+	<MarkerClusterer averageCenter enableRetinaIcons gridSize={60}>
+		{whiskies.map(whiskey => (
+			<Marker
+				position={{ lat: whiskey.latitude, lng: whiskey.longitude }}
+				icon={markerIcon}
+				onClick={() => handleClick(whiskey)}
+			/>
+		))}
+	</MarkerClusterer>
+);
 
 const render = props => (
 	<GoogleMap
@@ -24,7 +28,7 @@ const render = props => (
 		defaultCenter={{ lat: 15, lng: 25 }}
 		defaultOptions={{ styles: mapStyles }}
 	>
-		{props.isMarkerShown && renderMarkers()}
+		{props.isMarkerShown && renderMarkers(props)}
 	</GoogleMap>
 );
 
