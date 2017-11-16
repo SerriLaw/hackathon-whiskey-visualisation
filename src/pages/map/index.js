@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import whiskies from '../../config/whiskey';
 import MyMapComponent from '../../components/map';
+import Modal from 'react-modal';
 import './styles.css';
 
 class MapPage extends Component {
@@ -17,6 +18,10 @@ class MapPage extends Component {
 		this.setState({ showModal: true, selectedWhiskey: whiskey });
 	};
 
+	handleClose() {
+		this.setState({ showModal: false, selectedWhiskey: null });
+	}
+
 	render() {
 		return (
 			<div id="map-container">
@@ -26,9 +31,11 @@ class MapPage extends Component {
 					whiskies={whiskies}
 					handleClick={this.handleClick}
 				/>
-				<div style={{ display: this.state.showModal }}>
-					{JSON.stringify(this.state.selectedWhiskey)}
-				</div>
+
+				<Modal isOpen={this.state.showModal}>
+					<p>{JSON.stringify(this.state.selectedWhiskey)}</p>
+					<button onClick={this.handleClose}>Close</button>
+				</Modal>
 			</div>
 		);
 	}
