@@ -1,6 +1,24 @@
 #pageTops {
 	text-align: center;
-	padding-top: 7%;
+}
+
+.navigation {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 5px 10px;
+}
+
+li a {
+	text-decoration: underline;
+}
+
+li:hover {
+	opacity: 0.6;
 }
 
 .main-text {
