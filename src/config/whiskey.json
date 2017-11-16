@@ -222,5 +222,61 @@
     "colour": "light gold",
     "type": "blend",
     "url": "http://whiskeynerds.com/hybrid-whisk-e-y/"
+  },
+  {
+    "name": "Hakushu - 12 Year Old",
+    "age": 12,
+    "distillery": "Hakushu",
+    "country": "Japan",
+    "region_in_country": "Hokuto",
+    "rating_aroma": 8,
+    "rating_taste": 8,
+    "rating_finish": 8,
+    "rating_overall": 8,
+    "colour": "light gold",
+    "type": "single malt",
+    "url": "http://whiskeynerds.com/hakushu-12-years/"
+  },
+  {
+    "name": "Jura Elixir - 12 Year Old",
+    "age": 12,
+    "distillery": "Jura",
+    "country": "Scotland",
+    "region_in_country": "Isle of Jura",
+    "rating_aroma": 5,
+    "rating_taste": 6,
+    "rating_finish": 6,
+    "rating_overall": 6,
+    "colour": "dark amber",
+    "type": "single malt",
+    "url": "http://whiskeynerds.com/jura-elixir-12-year-old/"
+  },
+  {
+    "name": "Auchentoshan Springwood",
+    "age": "",
+    "distillery": "Auchentoshan",
+    "country": "Scotland",
+    "region_in_country": "Lowland",
+    "rating_aroma": 7,
+    "rating_taste": 7,
+    "rating_finish": 6,
+    "rating_overall": 7,
+    "colour": "dark gold",
+    "type": "single malt",
+    "url": "http://whiskeynerds.com/auchentoshan-springwood/"
+  },
+  {
+    "name": "Amrut Cask Strength",
+    "age": "",
+    "distillery": "Amrut",
+    "country": "India",
+    "region_in_country": "Bangalore",
+    "rating_aroma": 7,
+    "rating_taste": 7,
+    "rating_finish": 7,
+    "rating_overall": 7,
+    "colour": "dark amber",
+    "type": "single malt",
+    "url": "http://whiskeynerds.com/amrut-cask-strength/"
   }
 ]
