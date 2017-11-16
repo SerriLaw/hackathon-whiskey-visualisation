@@ -11,7 +11,7 @@ import mapStyles from './map-styles';
 import markerIcon from './bottle-small.png';
 
 const renderMarkers = ({ whiskies, handleClick }) =>
-	<MarkerClusterer averageCenter enableRetinaIcons gridSize={60}>
+	<MarkerClusterer averageCenter enableRetinaIcons gridSize={20}>
 		{whiskies.map(whiskey =>
 			<Marker
 				position={{ lat: whiskey.latitude, lng: whiskey.longitude }}
