@@ -2,6 +2,10 @@
 	text-align: center;
 }
 
+header {
+	display: inline-block;
+}
+
 .navigation {
 	list-style: none;
 	display: inline-block;
@@ -14,11 +18,12 @@ li {
 }
 
 li a {
+	color: black;
 	text-decoration: underline;
 }
 
 li:hover {
-	opacity: 0.6;
+	opacity: 0.5;
 }
 
 .main-text {

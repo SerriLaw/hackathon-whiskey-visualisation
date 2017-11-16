@@ -1,6 +1,12 @@
 import React from 'react';
 import './styles.css';
 
-export default function Footer() {
-	return <div id="footer" />;
-}
+const Footer = () => (
+	<div id="footer">
+		<p>
+			Data Source: <a href="http://whiskeynerds.com/">Whiskey Nerds</a>
+		</p>
+		<p>Hackathon Project &copy; 2017</p>
+	</div>
+);
+export default Footer;
