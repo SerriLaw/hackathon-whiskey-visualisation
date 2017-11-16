@@ -24,6 +24,9 @@ const Header = () => (
 				<li>
 					<a href="/whiskey-taste-profile">Taste Profile</a>
 				</li>
+				<li>
+					<a href="/complete-collection">Complete Collection</a>
+				</li>
 			</ul>
 		</nav>
 	</div>
