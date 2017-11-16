@@ -23,25 +23,44 @@ class WhiskeyRatingsPage extends Component {
 	render() {
 		return (
 			<LineChart
-				width={800}
+				width={1000}
 				height={600}
 				data={this.state.data}
-				margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+				margin={{ top: 30, right: 0, left: 0, bottom: 30 }}
 			>
-				<XAxis dataKey="test-name" />
-				<YAxis />
+				<XAxis dataKey="name" hide={true} />
+				<YAxis hide={false} />
 				<CartesianGrid strokeDasharray="3 3" />
 				<Tooltip />
-				<Legend />
 				<Line
 					type="monotone"
 					dataKey="rating_aroma"
-					stroke="#8884d8"
+					stroke="#53111d"
+					strokeWidth="2"
+					activeDot={{ r: 10 }}
+				/>
+				<Line
+					type="monotone"
+					dataKey="rating_taste"
+					stroke="#932d18"
+					strokeWidth="2"
+					activeDot={{ r: 6 }}
+				/>
+				<Line
+					type="monotone"
+					dataKey="rating_finish"
+					stroke="#d9762b"
+					strokeWidth="2"
+					activeDot={{ r: 10 }}
+				/>
+				<Line
+					type="monotone"
+					dataKey="rating_overall"
+					stroke="#a47963"
+					strokeWidth="2"
 					activeDot={{ r: 8 }}
 				/>
-				<Line type="monotone" dataKey="rating_taste" stroke="#82ca9d" />
-				<Line type="monotone" dataKey="rating_finish" stroke="#823997" />
-				<Line type="monotone" dataKey="rating_overall" stroke="#82b49d" />
+				<Legend verticalAlign="bottom" />
 			</LineChart>
 		);
 	}
