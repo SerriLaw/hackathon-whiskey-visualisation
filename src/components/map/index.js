@@ -6,27 +6,26 @@ import {
 	GoogleMap,
 	Marker
 } from 'react-google-maps';
-import whiskies from '../../config/whiskey';
 import mapStyles from './map-styles';
 import markerIcon from './bottle-small.png';
 
-const renderMarkers = () =>
-	whiskies.map(whiskey => (
+const renderMarkers = ({ whiskies, handleClick }) =>
+	whiskies.map(whiskey =>
 		<Marker
 			position={{ lat: whiskey.latitude, lng: whiskey.longitude }}
 			icon={markerIcon}
+			onClick={() => handleClick(whiskey)}
 		/>
-	));
+	);
 
-const render = props => (
+const render = props =>
 	<GoogleMap
 		defaultZoom={2}
 		defaultCenter={{ lat: 15, lng: 25 }}
 		defaultOptions={{ styles: mapStyles }}
 	>
-		{props.isMarkerShown && renderMarkers()}
-	</GoogleMap>
-);
+		{props.isMarkerShown && renderMarkers(props)}
+	</GoogleMap>;
 
 const MyMapComponent = compose(
 	withProps({
