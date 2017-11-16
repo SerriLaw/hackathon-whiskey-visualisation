@@ -1,8 +1,10 @@
 #wrapper {
-	background-color: #fff;
+	background-color: #ecdcba;
 }
 
 #inner_content {
 	max-width: 1000px;
 	margin: 0 auto;
+	padding: 0 40px;
+	background-color: white;
 }
