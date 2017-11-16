@@ -13,11 +13,13 @@ const Records = props =>
 					columns: [
 						{
 							Header: 'Name',
-							accessor: 'name'
+							accessor: 'name',
+							minWidth: 370
 						},
 						{
 							Header: 'Distillery',
-							accessor: 'distillery'
+							accessor: 'distillery',
+							minWidth: 170
 						}
 					]
 				},
@@ -26,19 +28,24 @@ const Records = props =>
 					columns: [
 						{
 							Header: 'Aroma',
-							accessor: 'aroma'
+							accessor: 'aroma',
+							maxWidth: 70
 						},
 						{
 							Header: 'Taste',
-							accessor: 'taste'
+							accessor: 'taste',
+							maxWidth: 70
 						},
 						{
 							Header: 'Finish',
-							accessor: 'finish'
+							accessor: 'finish',
+							maxWidth: 70
 						},
 						{
 							Header: 'Overall',
-							accessor: 'overall'
+							id: 'overall',
+							accessor: 'overall',
+							maxWidth: 70
 						}
 					]
 				},
@@ -46,10 +53,25 @@ const Records = props =>
 					Header: 'Link',
 					columns: [
 						{
-							Header: 'Link',
-							accessor: 'url'
+							Header: '',
+							Cell: cellInfo =>
+								<a href={cellInfo.original.url} target="_blank">
+									<span role="img" aria-label="link">
+										🔗
+									</span>
+								</a>
 						}
 					]
+				}
+			]}
+			defaultSorted={[
+				{
+					id: 'overall',
+					desc: true
+				},
+				{
+					id: 'name',
+					desc: false
 				}
 			]}
 			defaultPageSize={10}
