@@ -3,6 +3,7 @@ import { Switch, withRouter } from 'react-router-dom';
 import ScrollTopRoute from '../components/scroll-top-route';
 import HomePage from './home';
 import MapPage from './map';
+import RecordsPage from './records';
 import ErrorPage from './error';
 import WhiskeyRatings from './whiskey-ratings';
 import WhiskeyColors from './whiskey-colors';
@@ -13,6 +14,7 @@ const AppRouter = props => {
 		<Switch>
 			<ScrollTopRoute exact path="/" component={HomePage} />
 			<ScrollTopRoute exact path="/map" component={MapPage} />
+			<ScrollTopRoute exact path="/records" component={RecordsPage} />
 			<ScrollTopRoute
 				exact
 				path="/whiskey-ratings"
