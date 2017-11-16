@@ -5,6 +5,7 @@ import {
 	Scatter,
 	XAxis,
 	YAxis,
+	ZAxis,
 	CartesianGrid,
 	Tooltip,
 	Legend
@@ -17,12 +18,12 @@ class WhiskeyTasteProfilePage extends Component {
 
 		this.state = {
 			data: [
-				{ x: 100, y: 200, z: 200 },
-				{ x: 120, y: 100, z: 260 },
-				{ x: 170, y: 300, z: 400 },
-				{ x: 140, y: 250, z: 280 },
-				{ x: 150, y: 400, z: 500 },
-				{ x: 110, y: 280, z: 200 }
+				{ smoky: 100, rich: 200 },
+				{ smoky: 120, rich: 100 },
+				{ smoky: 170, rich: 300 },
+				{ smoky: 140, rich: 250 },
+				{ smoky: 150, rich: 400 },
+				{ smoky: 110, rich: 280 }
 			]
 		};
 	}
@@ -34,10 +35,27 @@ class WhiskeyTasteProfilePage extends Component {
 				height={400}
 				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
 			>
-				<XAxis dataKey={'x'} type="number" name="stature" unit="cm" />
-				<YAxis dataKey={'y'} type="number" name="weight" unit="kg" />
+				<XAxis
+					dataKey={'smoky'}
+					type="number"
+					name="smoky"
+					hide={true}
+					domain={[0, 100]}
+				/>
+				<YAxis
+					dataKey={'rich'}
+					type="number"
+					name="rich"
+					hide={true}
+					domain={[0, 100]}
+				/>
+
 				<CartesianGrid />
-				<Scatter name="A school" data={this.state.data} fill="#8884d8" />
+				<Scatter
+					data={this.state.data}
+					fill="#b3c335"
+					points={[{ cx: 12, cy: 12, r: 4, payload: { x: 12, y: 45, z: 9 } }]}
+				/>
 				<Tooltip cursor={{ strokeDasharray: '3 3' }} />
 			</ScatterChart>
 		);

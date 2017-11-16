@@ -30,7 +30,7 @@ class WhiskeyRatingsPage extends Component {
 				margin={{ top: 30, right: 0, left: 0, bottom: 30 }}
 			>
 				<XAxis dataKey="name" hide={true} />
-				<YAxis hide={true} />
+				<YAxis hide={true} domain={[0, 10]} />
 				<CartesianGrid strokeDasharray="3 3" />
 				<Tooltip />
 				<Line
