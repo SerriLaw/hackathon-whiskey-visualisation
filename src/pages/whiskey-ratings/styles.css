@@ -1,2 +1,27 @@
-tspan {
+.legendName {
+	display: inline-block;
+	margin: 0 15px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.legend {
+	text-align: center;
+}
+.icon {
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	margin-right: 2px;
+}
+.icon1 {
+	background-color: #53111d;
+}
+.icon2 {
+	background-color: #932d18;
+}
+.icon3 {
+	background-color: #d9762b;
+}
+.icon4 {
+	background-color: #a47963;
 }

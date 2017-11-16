@@ -17,47 +17,63 @@ class WhiskeyTasteProfilePage extends Component {
 		super(props);
 
 		this.state = {
-			data: [
-				{ smoky: 100, rich: 200 },
-				{ smoky: 120, rich: 100 },
-				{ smoky: 170, rich: 300 },
-				{ smoky: 140, rich: 250 },
-				{ smoky: 150, rich: 400 },
-				{ smoky: 110, rich: 280 }
-			]
+			data: whiskies
 		};
 	}
 
 	render() {
 		return (
-			<ScatterChart
-				width={1000}
-				height={400}
-				margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
-			>
-				<XAxis
-					dataKey={'smoky'}
-					type="number"
-					name="smoky"
-					hide={true}
-					domain={[0, 100]}
-				/>
-				<YAxis
-					dataKey={'rich'}
-					type="number"
-					name="rich"
-					hide={true}
-					domain={[0, 100]}
-				/>
+			<div>
+				<h2>Flavour Map</h2>
+				<div className="container">
+					<div className="row">
+						<h3>SMOKY</h3>
+					</div>
+					<div className="aligner">
+						<div className="mrow-one">
+							<h3>LIGHT</h3>
+						</div>
+						<div className="mrow">
+							<ScatterChart
+								width={800}
+								height={700}
+								margin={{ right: 20, left: 20 }}
+							>
+								<XAxis
+									dataKey={'light_rich'}
+									type="number"
+									name="Light to Rich"
+									hide={true}
+									domain={[0, 10]}
+									padding={{ left: 10, right: 10 }}
+								/>
+								<YAxis
+									dataKey={'delicate_smoky'}
+									type="number"
+									name="Delicate to Smoky"
+									hide={true}
+									domain={[0, 10]}
+									padding={{ top: 10, bottom: 10 }}
+								/>
 
-				<CartesianGrid />
-				<Scatter
-					data={this.state.data}
-					fill="#b3c335"
-					points={[{ cx: 12, cy: 12, r: 4, payload: { x: 12, y: 45, z: 9 } }]}
-				/>
-				<Tooltip cursor={{ strokeDasharray: '3 3' }} />
-			</ScatterChart>
+								<CartesianGrid strokeDasharray="3 3" />
+								<Scatter
+									data={this.state.data}
+									fill="#8D2E05"
+									animationBegin="10"
+								/>
+								<Tooltip cursor={{ strokeDasharray: '3 3' }} />
+							</ScatterChart>
+						</div>
+						<div className="mrow-last">
+							<h3>RICH</h3>
+						</div>
+					</div>
+					<div className="row">
+						<h3>DELICATE</h3>
+					</div>
+				</div>
+			</div>
 		);
 	}
 }

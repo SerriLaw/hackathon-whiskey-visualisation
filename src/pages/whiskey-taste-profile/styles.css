@@ -1,1 +1,11 @@
-
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row {
+	text-align: center;
+}
+.container {
+	padding-top: 25px;
+}
