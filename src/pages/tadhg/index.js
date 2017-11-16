@@ -17,7 +17,7 @@ class HomePage extends Component {
 	render() {
 		return (
 			<div>
-				hello world <br />
+				hello tadhg <br />
 				{JSON.stringify(whiskey)}
 			</div>
 		);

@@ -4,26 +4,17 @@ import ScrollTopRoute from '../components/scroll-top-route';
 import HomePage from './home';
 import TadhgPage from './tadhg';
 import ErrorPage from './error';
-import WhiskeyRatings from './whiskey-ratings';
-import WhiskeyColors from './whiskey-colors';
-import WhiskeyTasteProfile from './whiskey-taste-profile';
+import WhiskeyVisPage from './whiskeyVis';
 
 const AppRouter = props => {
 	return (
 		<Switch>
 			<ScrollTopRoute exact path="/" component={HomePage} />
+<<<<<<< HEAD
+			<ScrollTopRoute exact path="/whiskey-charts" component={WhiskeyVisPage} />
+=======
 			<ScrollTopRoute exact path="/tadhg" component={TadhgPage} />
-			<ScrollTopRoute
-				exact
-				path="/whiskey-ratings"
-				component={WhiskeyRatings}
-			/>
-			<ScrollTopRoute exact path="/whiskey-colors" component={WhiskeyColors} />
-			<ScrollTopRoute
-				exact
-				path="/whiskey-taste-profile"
-				component={WhiskeyTasteProfile}
-			/>
+>>>>>>> 2e11577a924105211c5839f731ab23feb2bb4f05
 			<ScrollTopRoute exact path="/error" component={ErrorPage} />
 			<ScrollTopRoute to="/" component={HomePage} />
 		</Switch>

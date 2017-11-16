@@ -1,0 +1,64 @@
+[
+	{
+		"name": "Westward American Single Malt",
+		"age": "",
+		"distillery": "House Spirits Distillery",
+		"country": "USA",
+		"region_in_country": "Oregon",
+		"rating_aroma": 7,
+		"rating_taste": 8,
+		"rating_finish": 7,
+		"rating_overall": 7,
+		"url": "http://whiskeynerds.com/westward-american-single-malt/"
+	},
+	{
+		"name": "The Chita - Suntory Whisky",
+		"age": "",
+		"distillery": "Chita Distillery",
+		"country": "Japan",
+		"region_in_country": "",
+		"rating_aroma": 7,
+		"rating_taste": 7,
+		"rating_finish": 6,
+		"rating_overall": 7,
+		"url": "http://whiskeynerds.com/the-chita-suntory-whisky/"
+	},
+	{
+		"name": "Applewood Baby Malt",
+		"age": "",
+		"distillery": "Applewood Distillery",
+		"country": "Australia",
+		"region_in_country": "South Australia",
+		"rating_aroma": 5,
+		"rating_taste": 6,
+		"rating_finish": 5,
+		"rating_overall": 5,
+		"url":
+			"http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
+	},
+	{
+		"name": "Colonial Malt (Moonshine)",
+		"age": "",
+		"distillery": "Applewood Distillery",
+		"country": "Australia",
+		"region_in_country": "South Australia",
+		"rating_aroma": 3,
+		"rating_taste": 5,
+		"rating_finish": 5,
+		"rating_overall": 4,
+		"url":
+			"http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
+	},
+	{
+		"name": "Dalwhinnie 15 Year Old",
+		"age": 15,
+		"distillery": "Dalwhinnie",
+		"country": "Scotland",
+		"region_in_country": "Highlands",
+		"rating_aroma": 8,
+		"rating_taste": 8,
+		"rating_finish": 8,
+		"rating_overall": 8,
+		"url": "http://whiskeynerds.com/dalwhinnie-15-year-old/"
+	}
+]

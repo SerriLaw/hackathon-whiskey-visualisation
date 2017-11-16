@@ -1,0 +1,10 @@
+
+<<<<<<< HEAD
+=======
+#inner_content {
+	max-width: 934px;
+	margin: 0 auto;
+	background-color: #000;
+	color: whitesmoke;
+}
+>>>>>>> 2e11577a924105211c5839f731ab23feb2bb4f05

@@ -1,1 +1,8 @@
+#wrapper {
+	background-color: #fff;
+}
 
+#inner_content {
+	max-width: 934px;
+	margin: 0 auto;
+}
