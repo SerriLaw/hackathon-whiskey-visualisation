@@ -16,7 +16,8 @@ class WhiskeyRatingsPage extends Component {
 		super(props);
 
 		this.state = {
-			data: whiskies
+			data: whiskies,
+			legendNames: ['Aroma', 'Taste', 'Finish', 'Overall']
 		};
 	}
 
@@ -29,7 +30,7 @@ class WhiskeyRatingsPage extends Component {
 				margin={{ top: 30, right: 0, left: 0, bottom: 30 }}
 			>
 				<XAxis dataKey="name" hide={true} />
-				<YAxis hide={false} />
+				<YAxis hide={true} />
 				<CartesianGrid strokeDasharray="3 3" />
 				<Tooltip />
 				<Line
@@ -60,7 +61,7 @@ class WhiskeyRatingsPage extends Component {
 					strokeWidth="2"
 					activeDot={{ r: 8 }}
 				/>
-				<Legend verticalAlign="bottom" />
+				<Legend />
 			</LineChart>
 		);
 	}
