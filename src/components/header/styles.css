@@ -1,0 +1,25 @@
+#pageTops {
+	text-align: center;
+	padding-top: 7%;
+}
+
+.main-text {
+	margin: 0 auto;
+	margin-top: 4%;
+}
+
+.main-text p {
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 1.5em;
+	margin: 0 auto 2%;
+	display: block;
+}
+
+.mtext1 {
+	width: 60%;
+}
+
+.mtext2 {
+	width: 80%;
+}

@@ -1,19 +1,40 @@
 {
-  "name": "hackathon-whiskey-visualisation",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SerriLaw/hackathon-whiskey-visualisation.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SerriLaw/hackathon-whiskey-visualisation/issues"
-  },
-  "homepage": "https://github.com/SerriLaw/hackathon-whiskey-visualisation#readme",
-  "description": ""
+	"name": "hackathon-whiskey-visualisation",
+	"description": "hackathon-whiskey-visualisation",
+	"version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SerriLaw/hackathon-whiskey-visualisation.git"
+    },
+	"dependencies": {
+		"html-to-react": "^1.2.9",
+		"mi9-sso-sdk": "^2.4.1",
+		"react": "^15.5.4",
+		"react-dom": "^15.5.4",
+		"react-input-mask": "^0.9.1",
+		"react-router-dom": "^4.1.1"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"enzyme": "^2.8.2",
+		"husky": "^0.14.3",
+		"lint-staged": "^4.0.1",
+		"prettier": "^1.5.2",
+		"react-scripts": "^1.0.7",
+		"react-test-renderer": "^15.5.4"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"precommit": "lint-staged",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	},
+	"lint-staged": {
+		"src/**/*.+(js|json|css)": [
+			"prettier --use-tabs --single-quote --write",
+			"git add"
+		]
+	}
 }

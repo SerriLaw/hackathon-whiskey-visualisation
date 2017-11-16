@@ -1,0 +1,72 @@
+{
+	"default": {
+		"closedEpoch": 1577797200,
+		"tracking": {
+			"omnitureSuiteId": "msnportalaucatglobal",
+			"category": "miscellaneous",
+			"siteName": "campaign",
+			"sectionName": "campaign-template-test",
+			"nielsenEnabled": false,
+			"enabled": true
+		},
+		"allowedDomains": [
+			"preview.9now.com.au",
+			"www.9now.com.au",
+			"staging.9now.com.au",
+			"uat.9now.com.au"
+		],
+		"nineThirdPartyKit": {
+			"headerUrl": "https://www.networkservices.ninemsn.com.au/v2/header",
+			"footerUrl": "https://www.networkservices.ninemsn.com.au/v2/footer"
+		}
+	},
+	"localhost": {
+		"iframeUrl": "http://127.0.0.1:5000/iframe.html",
+		"compEngine": {
+			"phaseId": 71,
+			"formUrl": "https://test.competition.nine.com.au/enter-phase",
+			"fileUrl": "https://test-fileupload.competition.nine.com.au/enter-phase",
+			"customFields": {
+				"file": { "id": 186, "type": "file" },
+				"uuid": { "id": 185, "type": "text" }
+			}
+		},
+		"sso": {
+			"clientId": "logies-local",
+			"loginService": "http://test.login.nine.com.au",
+			"settingsService": "http://test.settings.nine.com.au"
+		}
+	},
+	"uat": {
+		"compEngine": {
+			"phaseId": 26,
+			"formUrl": "https://uat.competition.nine.com.au/enter-phase",
+			"fileUrl": "https://uat-fileupload.competition.nine.com.au/enter-phase",
+			"customFields": {
+				"file": { "id": 58, "type": "file" },
+				"uuid": { "id": 59, "type": "text" }
+			}
+		},
+		"sso": {
+			"clientId": "logies-uat",
+			"loginService": "https://uat.login.nine.com.au",
+			"settingsService": "https://uat.settings.nine.com.au"
+		}
+	},
+	"prod": {
+		"compEngine": {
+			"phaseId": 31,
+			"formUrl": "https://competition.nine.com.au/enter-phase",
+			"fileUrl": "https://fileupload.competition.nine.com.au/enter-phase",
+			"customFields": {
+				"file": { "id": 53, "type": "file" },
+				"uuid": { "id": 54, "type": "text" }
+			}
+		},
+		"sso": {
+			"clientId": "logies",
+			"loginService": "https://login.nine.com.au",
+			"settingsService": "https://settings.nine.com.au"
+		}
+	}
+}

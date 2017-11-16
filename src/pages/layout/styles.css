@@ -1,0 +1,10 @@
+#wrapper {
+	background-color: #fff;
+}
+
+#inner_content {
+	max-width: 534px;
+	margin: 0 auto;
+	background-color: #000;
+	color: whitesmoke;
+}
