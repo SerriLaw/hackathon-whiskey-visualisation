@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import whiskies from '../../config/whiskies';
+import whiskey from '../../config/whiskey';
 import './styles.css';
 
 class HomePage extends Component {
@@ -18,7 +18,7 @@ class HomePage extends Component {
 		return (
 			<div>
 				hello world <br />
-				{JSON.stringify(whiskies)}
+				{JSON.stringify(whiskey)}
 			</div>
 		);
 	}
