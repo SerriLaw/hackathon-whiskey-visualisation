@@ -37,28 +37,28 @@ class WhiskeyRatingsPage extends Component {
 					<Tooltip />
 					<Line
 						type="monotone"
-						dataKey="rating_aroma"
+						dataKey="aroma"
 						stroke="#53111d"
 						strokeWidth="2"
 						activeDot={{ r: 10 }}
 					/>
 					<Line
 						type="monotone"
-						dataKey="rating_taste"
+						dataKey="taste"
 						stroke="#932d18"
 						strokeWidth="2"
 						activeDot={{ r: 6 }}
 					/>
 					<Line
 						type="monotone"
-						dataKey="rating_finish"
+						dataKey="finish"
 						stroke="#d9762b"
 						strokeWidth="2"
 						activeDot={{ r: 10 }}
 					/>
 					<Line
 						type="monotone"
-						dataKey="rating_overall"
+						dataKey="overall"
 						stroke="#a47963"
 						strokeWidth="2"
 						activeDot={{ r: 8 }}

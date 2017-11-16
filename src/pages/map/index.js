@@ -106,15 +106,9 @@ class MapPage extends Component {
 							<td className="data data-finish score">Finish</td>
 						</tr>
 						<tr>
-							<td className="data data-aroma score">
-								{data.rating_aroma} / 10
-							</td>
-							<td className="data data-taste score">
-								{data.rating_taste} / 10
-							</td>
-							<td className="data data-finish score">
-								{data.rating_finish} / 10
-							</td>
+							<td className="data data-aroma score">{data.aroma} / 10</td>
+							<td className="data data-taste score">{data.taste} / 10</td>
+							<td className="data data-finish score">{data.finish} / 10</td>
 						</tr>
 						<tr>
 							<td colSpan={3} className="data data-overall score">
@@ -123,7 +117,7 @@ class MapPage extends Component {
 						</tr>
 						<tr>
 							<td colSpan={3} className="data data-overall score">
-								{data.rating_overall} / 10
+								{data.overall} / 10
 							</td>
 						</tr>
 					</table>

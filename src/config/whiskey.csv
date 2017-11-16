@@ -1,4 +1,4 @@
-name,friendly_name,age,distillery,country,region_in_country,latitude,longitude,rating_aroma,rating_taste,rating_finish,rating_overall,colour,type,url
+name,friendly_name,age,distillery,country,region_in_country,latitude,longitude,aroma,taste,finish,overall,colour,type,url
 Westward American Single Malt,Westward,,House Spirits,USA,Oregon,45.5189855,-122.6675335,7,8,7,7,dark amber,single malt,http://whiskeynerds.com/westward-american-single-malt/
 The Chita - Suntory Whisky,Chita,,Chita,Japan,,23.2178598,83.7032353,7,7,6,7,light gold,single grain,http://whiskeynerds.com/the-chita-suntory-whisky/
 Applewood Baby Malt,Applewood,,Applewood,Australia,South Australia,-34.8284899,138.8836056,5,6,5,5,light amber,malt,http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/
