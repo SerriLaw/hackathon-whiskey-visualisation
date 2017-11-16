@@ -55,18 +55,21 @@ class WhiskeyColorsPage extends Component {
 
 	render() {
 		return (
-			<PieChart width={1000} height={600}>
-				<Pie
-					data={this.state.data}
-					innerRadius={150}
-					outerRadius={200}
-					fill="#82ca9d"
-				>
-					{this.state.data.map((entry, index) => <Cell fill={entry.color} />)}
-				</Pie>
-				<Tooltip />
-				<Legend />
-			</PieChart>
+			<div>
+				<h2>Colour Wheel</h2>
+				<PieChart width={1000} height={600}>
+					<Pie
+						data={this.state.data}
+						innerRadius={100}
+						outerRadius={200}
+						fill="#82ca9d"
+					>
+						{this.state.data.map((entry, index) => <Cell fill={entry.color} />)}
+					</Pie>
+					<Tooltip />
+					<Legend />
+				</PieChart>
+			</div>
 		);
 	}
 }
