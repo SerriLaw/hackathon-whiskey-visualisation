@@ -5,7 +5,7 @@ class ErrorPage extends Component {
 		return (
 			<div style={{ textAlign: 'center' }}>
 				<h2>ErrorPage page</h2>
-				<div>something went wrong 😟</div>
+				<div>something went wrong</div>
 			</div>
 		);
 	}
