@@ -8,7 +8,7 @@ import {
 } from 'react-google-maps';
 import whiskies from '../../config/whiskey';
 import mapStyles from './map-styles';
-import markerIcon from './marker.jpg';
+import markerIcon from './bottle-small.png';
 
 const renderMarkers = () =>
 	whiskies.map(whiskey => (
