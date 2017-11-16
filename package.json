@@ -2,14 +2,16 @@
 	"name": "hackathon-whiskey-visualisation",
 	"description": "hackathon-whiskey-visualisation",
 	"version": "1.0.0",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/SerriLaw/hackathon-whiskey-visualisation.git"
-    },
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SerriLaw/hackathon-whiskey-visualisation.git"
+	},
 	"dependencies": {
 		"react": "^15.5.4",
 		"react-dom": "^15.5.4",
-		"react-router-dom": "^4.1.1"
+		"react-google-maps": "^9.2.2",
+		"react-router-dom": "^4.1.1",
+		"recompose": "^0.26.0"
 	},
 	"author": "",
 	"license": "ISC",

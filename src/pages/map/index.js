@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import whiskey from '../../config/whiskey';
+// import whiskey from '../../config/whiskey';
+import MyMapComponent from '../../components/map';
 import './styles.css';
 
-class HomePage extends Component {
+class MapPage extends Component {
 	constructor(props) {
 		super(props);
 
@@ -16,11 +17,11 @@ class HomePage extends Component {
 
 	render() {
 		return (
-			<div>
-				hello tadhg <br />
-				{JSON.stringify(whiskey)}
+			<div id="map-container">
+				<h1>👋 Hello World 👋</h1>
+				<MyMapComponent isMarkerShown={true} />
 			</div>
 		);
 	}
 }
-export default HomePage;
+export default MapPage;
