@@ -36,6 +36,9 @@ class MapPage extends Component {
 					<p>{JSON.stringify(this.state.selectedWhiskey)}</p>
 					<button onClick={this.handleClose}>Close</button>
 				</Modal>
+
+				{/* I really need to reset state rather than a hard reload */}
+				<button onClick={() => window.location.reload()}>Reset</button>
 			</div>
 		);
 	}
