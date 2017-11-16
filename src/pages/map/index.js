@@ -133,6 +133,9 @@ class MapPage extends Component {
 						<a href={data.url}>See reviews on WhiskeyNerds.com</a>
 					</p>
 				</Modal>
+
+				{/* I really need to reset state rather than a hard reload */}
+				<button onClick={() => window.location.reload()}>Reset</button>
 			</div>
 		);
 	}

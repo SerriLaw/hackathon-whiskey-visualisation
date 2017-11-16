@@ -10,25 +10,32 @@ import { MarkerClusterer } from 'react-google-maps/lib/components/addons/MarkerC
 import mapStyles from './map-styles';
 import markerIcon from './bottle-small.png';
 
-const renderMarkers = ({ whiskies, handleClick }) =>
-	<MarkerClusterer averageCenter enableRetinaIcons gridSize={60}>
-		{whiskies.map(whiskey =>
+const renderMarkers = ({ whiskies, handleClick }) => (
+	<MarkerClusterer
+		averageCenter
+		enableRetinaIcons
+		gridSize={20}
+		minimumClusterSize={3}
+	>
+		{whiskies.map(whiskey => (
 			<Marker
 				position={{ lat: whiskey.latitude, lng: whiskey.longitude }}
-				icon={markerIcon}
+				icon={{ url: markerIcon, anchor: { x: 9, y: 0 } }}
 				onClick={() => handleClick(whiskey)}
 			/>
-		)}
-	</MarkerClusterer>;
+		))}
+	</MarkerClusterer>
+);
 
-const render = props =>
+const render = props => (
 	<GoogleMap
 		defaultZoom={2}
 		defaultCenter={{ lat: 15, lng: 25 }}
 		defaultOptions={{ styles: mapStyles }}
 	>
 		{props.isMarkerShown && renderMarkers(props)}
-	</GoogleMap>;
+	</GoogleMap>
+);
 
 const MyMapComponent = compose(
 	withProps({
