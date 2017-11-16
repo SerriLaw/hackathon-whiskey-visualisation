@@ -19,7 +19,7 @@ class WhiskeyColorsPage extends Component {
 
 	render() {
 		return (
-			<PieChart width={800} height={600}>
+			<PieChart width={1000} height={600}>
 				<Pie
 					data={this.state.data}
 					innerRadius={150}
