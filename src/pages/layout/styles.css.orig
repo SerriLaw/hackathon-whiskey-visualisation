@@ -5,4 +5,8 @@
 #inner_content {
 	max-width: 1000px;
 	margin: 0 auto;
+<<<<<<< HEAD
+=======
+	color: black;
+>>>>>>> 3a35e1fc5757dd271fae266938c9af65ac112b7f
 }

@@ -1,0 +1,23 @@
+import React from 'react';
+import { Switch, withRouter } from 'react-router-dom';
+import ScrollTopRoute from '../components/scroll-top-route';
+import HomePage from './home';
+import TadhgPage from './tadhg';
+import ErrorPage from './error';
+import WhiskeyVisPage from './whiskeyVis';
+
+const AppRouter = props => {
+	return (
+		<Switch>
+			<ScrollTopRoute exact path="/" component={HomePage} />
+<<<<<<< HEAD
+			<ScrollTopRoute exact path="/whiskey-charts" component={WhiskeyVisPage} />
+=======
+			<ScrollTopRoute exact path="/tadhg" component={TadhgPage} />
+>>>>>>> 2e11577a924105211c5839f731ab23feb2bb4f05
+			<ScrollTopRoute exact path="/error" component={ErrorPage} />
+			<ScrollTopRoute to="/" component={HomePage} />
+		</Switch>
+	);
+};
+export default withRouter(AppRouter);

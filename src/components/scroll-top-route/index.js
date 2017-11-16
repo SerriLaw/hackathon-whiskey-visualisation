@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 const scrollTo = window.scrollTo;
-const postMessage = window.parent.postMessage;
 
 class ScrollTopRoute extends Component {
 	componentDidMount(prevProps) {
