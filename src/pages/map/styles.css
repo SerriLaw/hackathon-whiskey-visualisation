@@ -1,3 +1,7 @@
 #map-container {
 	text-align: center;
 }
+
+#map-text {
+	margin: 30px 0 30px 0;
+}

@@ -56,7 +56,7 @@ class WhiskeyColorsPage extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Colour Wheel</h2>
+				<h2>Our 5 Shades of Whiskey</h2>
 				<PieChart width={1000} height={600}>
 					<Pie
 						data={this.state.data}

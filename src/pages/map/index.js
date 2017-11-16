@@ -18,7 +18,7 @@ class MapPage extends Component {
 	render() {
 		return (
 			<div id="map-container">
-				<h1>👋 Hello World 👋</h1>
+				<h2 id="map-text">Travelling the world, one dram at a time</h2>
 				<MyMapComponent isMarkerShown={true} />
 			</div>
 		);
