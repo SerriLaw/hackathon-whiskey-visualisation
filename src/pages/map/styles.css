@@ -34,6 +34,17 @@ p.data {
 	cursor: pointer;
 }
 
+.reset {
+	text-align: center;
+	background-color: #ccc;
+	border-radius: 10px;
+	height: 30px;
+	width: 100px;
+	margin: 15px 0 25px 0;
+	display: inline-block;
+	cursor: pointer;
+}
+
 .colorLine {
 	width: 80%;
 	text-align: center;
