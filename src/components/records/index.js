@@ -3,13 +3,16 @@ import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 import './styles.css';
 
+const filterMethod = (filter, row) => row[filter.id] >= filter.value;
+
 const Records = props =>
 	<div>
 		<ReactTable
 			data={props.whiskies}
+			filterable
 			columns={[
 				{
-					Header: 'Name & Distillery',
+					Header: 'Details',
 					columns: [
 						{
 							Header: 'Name',
@@ -19,7 +22,12 @@ const Records = props =>
 						{
 							Header: 'Distillery',
 							accessor: 'distillery',
-							minWidth: 170
+							minWidth: 120
+						},
+						{
+							Header: 'Country',
+							accessor: 'country',
+							minWidth: 100
 						}
 					]
 				},
@@ -29,23 +37,27 @@ const Records = props =>
 						{
 							Header: 'Aroma',
 							accessor: 'aroma',
-							maxWidth: 70
+							maxWidth: 70,
+							filterMethod
 						},
 						{
 							Header: 'Taste',
 							accessor: 'taste',
-							maxWidth: 70
+							maxWidth: 70,
+							filterMethod
 						},
 						{
 							Header: 'Finish',
 							accessor: 'finish',
-							maxWidth: 70
+							maxWidth: 70,
+							filterMethod
 						},
 						{
 							Header: 'Overall',
 							id: 'overall',
 							accessor: 'overall',
-							maxWidth: 70
+							maxWidth: 70,
+							filterMethod
 						}
 					]
 				},
@@ -54,6 +66,7 @@ const Records = props =>
 					columns: [
 						{
 							Header: '',
+							maxWidth: 50,
 							Cell: cellInfo =>
 								<a href={cellInfo.original.url} target="_blank">
 									<span role="img" aria-label="link">
