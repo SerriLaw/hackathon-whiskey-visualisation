@@ -26,11 +26,11 @@ class MapPage extends Component {
 			case 'clear':
 				hexColour = '#ECDCBA';
 				break;
-			case 'light gold':
-				hexColour = '#ECC03F';
-				break;
 			case 'dark gold':
 				hexColour = '#D98B16';
+				break;
+			default:
+				hexColour = '#ECC03F';
 				break;
 		}
 
