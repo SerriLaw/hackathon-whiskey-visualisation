@@ -19,7 +19,12 @@ class WhiskeyTasteProfilePage extends Component {
 		super(props);
 
 		this.state = {
-			data: whiskies
+			data01: whiskies.filter(function(item, index) {
+				return item.light_rich <= 7;
+			}),
+			data02: whiskies.filter(function(item, index) {
+				return item.delicate_smoky >= 5;
+			})
 		};
 	}
 
@@ -61,7 +66,8 @@ class WhiskeyTasteProfilePage extends Component {
 								/>
 
 								<CartesianGrid strokeDasharray="3 3" />
-								<Scatter data={this.state.data} fill="#592403" />
+								<Scatter data={this.state.data01} fill="#592403" />
+								<Scatter data={this.state.data02} fill="#D98B16" />
 								<Tooltip cursor={false} />
 							</ScatterChart>
 						</div>
