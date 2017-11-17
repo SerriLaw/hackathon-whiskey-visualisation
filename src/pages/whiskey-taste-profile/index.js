@@ -61,12 +61,8 @@ class WhiskeyTasteProfilePage extends Component {
 								/>
 
 								<CartesianGrid strokeDasharray="3 3" />
-								<Scatter data={this.state.data} fill="#592403">
-									<LabelList dataKey="name" position="insideTop" />
-								</Scatter>
-								{/* <Text dataKey={'name'} textAnchor={'start'}/>
-								<Label value="test"/> */}
-								{/* <Tooltip cursor={false} /> */}
+								<Scatter data={this.state.data} fill="#592403" />
+								<Tooltip cursor={false} />
 							</ScatterChart>
 						</div>
 						<div className="mrow-last">

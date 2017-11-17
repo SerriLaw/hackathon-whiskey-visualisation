@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import whiskies from '../../config/whiskey.json';
+import RecordsTable from '../../components/records';
 import {
 	LineChart,
 	Line,
@@ -21,7 +22,7 @@ class WhiskeyRatingsPage extends Component {
 				.sort(function(a, b) {
 					return a.overall < b.overall ? 1 : -1;
 				})
-				.slice(0, 10)
+				.slice(0, 3)
 		};
 	}
 
@@ -29,8 +30,8 @@ class WhiskeyRatingsPage extends Component {
 		return (
 			<div>
 				<h2>Whiskey Ratings</h2>
-				<div>
-					<h3>Top 10</h3>
+				<div className="topThree">
+					<h3>Our Top 3 Whiskey's</h3>
 					<table>
 						<thead>
 							<tr>
@@ -57,7 +58,7 @@ class WhiskeyRatingsPage extends Component {
 					margin={{ top: 30, right: 0, left: 0, bottom: 30 }}
 				>
 					<XAxis dataKey="name" hide={true} padding={{ left: 20, right: 20 }} />
-					<YAxis hide={true} domain={[0, 10]} />
+					<YAxis hide={false} domain={[0, 10]} />
 					<CartesianGrid strokeDasharray="3 3" />
 					<Tooltip />
 					<Line
