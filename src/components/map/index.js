@@ -33,7 +33,7 @@ const render = props => (
 		defaultCenter={{ lat: 15, lng: 25 }}
 		defaultOptions={{ styles: mapStyles }}
 	>
-		{props.isMarkerShown && renderMarkers(props)}
+		{renderMarkers(props)}
 	</GoogleMap>
 );
 
