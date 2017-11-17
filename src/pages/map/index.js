@@ -45,7 +45,6 @@ class MapPage extends Component {
 	};
 
 	render() {
-		console.log(whiskies);
 		return (
 			<div id="map-container">
 				<h2 id="map-text">Travelling the world, one dram at a time</h2>
