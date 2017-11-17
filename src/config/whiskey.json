@@ -19,6 +19,25 @@
 		"url": "http://whiskeynerds.com/westward-american-single-malt/"
 	},
 	{
+		"name": "Glendalough 13 Year Old",
+		"friendly_name": "Glendalough",
+		"age": "13",
+		"distillery": "Glendalough Distillery",
+		"country": "Ireland",
+		"region_in_country": "Glendalough",
+		"latitude": 53.0849962,
+		"longitude": -6.1096028,
+		"aroma": 7,
+		"taste": 8,
+		"finish": 7,
+		"overall": 7,
+		"colour": "light gold",
+		"type": "single malt",
+		"light_rich": 2,
+		"delicate_smoky": 6,
+		"url": "http://whiskeynerds.com/glendalough-13-year-old/"
+	},
+	{
 		"name": "The Chita - Suntory Whisky",
 		"friendly_name": "Chita",
 		"age": "",
@@ -54,8 +73,7 @@
 		"type": "malt",
 		"light_rich": 3,
 		"delicate_smoky": 4,
-		"url":
-			"http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
+		"url": "http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
 	},
 	{
 		"name": "Colonial Malt (Moonshine)",
@@ -74,8 +92,7 @@
 		"type": "malt",
 		"light_rich": 4,
 		"delicate_smoky": 5,
-		"url":
-			"http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
+		"url": "http://whiskeynerds.com/aplewood-colonial-malt-and-baby-malt-double-feature/"
 	},
 	{
 		"name": "Dalwhinnie 15 Year Old",
@@ -873,8 +890,7 @@
 		"type": "single malt",
 		"light_rich": 4,
 		"delicate_smoky": 7,
-		"url":
-			"http://whiskeynerds.com/glenmorangie-the-quinta-ruban-port-cask-finish/"
+		"url": "http://whiskeynerds.com/glenmorangie-the-quinta-ruban-port-cask-finish/"
 	},
 	{
 		"name": "Hellyers Road Single Malt Peated",
