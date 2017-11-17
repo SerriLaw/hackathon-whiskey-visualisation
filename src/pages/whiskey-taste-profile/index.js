@@ -5,10 +5,12 @@ import {
 	Scatter,
 	XAxis,
 	YAxis,
-	ZAxis,
 	CartesianGrid,
 	Tooltip,
-	Legend
+	LabelList,
+	Label,
+	Legend,
+	Text
 } from 'recharts';
 import './styles.css';
 
@@ -20,6 +22,8 @@ class WhiskeyTasteProfilePage extends Component {
 			data: whiskies
 		};
 	}
+
+	getPoints(data) {}
 
 	render() {
 		return (
@@ -57,12 +61,12 @@ class WhiskeyTasteProfilePage extends Component {
 								/>
 
 								<CartesianGrid strokeDasharray="3 3" />
-								<Scatter
-									data={this.state.data}
-									fill="#592403"
-									animationBegin="10"
-								/>
-								<Tooltip cursor={{ strokeDasharray: '3 3' }} />
+								<Scatter data={this.state.data} fill="#592403">
+									<LabelList dataKey="name" position="insideTop" />
+								</Scatter>
+								{/* <Text dataKey={'name'} textAnchor={'start'}/>
+								<Label value="test"/> */}
+								{/* <Tooltip cursor={false} /> */}
 							</ScatterChart>
 						</div>
 						<div className="mrow-last">

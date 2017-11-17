@@ -6,8 +6,7 @@ import {
 	XAxis,
 	YAxis,
 	CartesianGrid,
-	Tooltip,
-	Legend
+	Tooltip
 } from 'recharts';
 import './styles.css';
 
@@ -17,7 +16,12 @@ class WhiskeyRatingsPage extends Component {
 
 		this.state = {
 			data: whiskies,
-			legendNames: ['Aroma', 'Taste', 'Finish', 'Overall']
+			legendNames: ['Aroma', 'Taste', 'Finish', 'Overall'],
+			topTen: whiskies
+				.sort(function(a, b) {
+					return a.overall < b.overall ? 1 : -1;
+				})
+				.slice(0, 10)
 		};
 	}
 
@@ -25,6 +29,27 @@ class WhiskeyRatingsPage extends Component {
 		return (
 			<div>
 				<h2>Whiskey Ratings</h2>
+				<div>
+					<h3>Top 10</h3>
+					<table>
+						<thead>
+							<tr>
+								<td>Rank</td>
+								<td>Whiskey</td>
+							</tr>
+						</thead>
+						<tbody>
+							{this.state.topTen.map(function(item, index) {
+								return (
+									<tr key={index}>
+										<td>{index + 1}</td>
+										<td>{item.name}</td>
+									</tr>
+								);
+							})}
+						</tbody>
+					</table>
+				</div>
 				<LineChart
 					width={1000}
 					height={600}

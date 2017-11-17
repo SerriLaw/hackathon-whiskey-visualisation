@@ -25,3 +25,6 @@
 .icon4 {
 	background-color: #a47963;
 }
+.recharts-tooltip-item-name {
+	text-transform: capitalize;
+}

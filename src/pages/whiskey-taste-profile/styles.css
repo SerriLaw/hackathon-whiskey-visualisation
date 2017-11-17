@@ -9,3 +9,7 @@
 .container {
 	padding-top: 25px;
 }
+.recharts-tooltip-wrapper {
+	visibility: visible;
+	transform-origin: center;
+}
