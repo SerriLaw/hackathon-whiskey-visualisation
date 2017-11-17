@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import whiskies from '../../config/whiskey';
-import Map from '../../components/map';
+import RecordsTable from '../../components/records';
 import Modal from '../../components/modal';
 import './styles.css';
 
-class MapPage extends Component {
+class CollectionPage extends Component {
 	constructor(props) {
 		super(props);
 
@@ -15,6 +15,7 @@ class MapPage extends Component {
 	}
 
 	handleClick = whiskey => {
+		console.log('handling click');
 		let hexColour;
 		switch (whiskey.colour) {
 			case 'dark amber':
@@ -45,22 +46,19 @@ class MapPage extends Component {
 	};
 
 	render() {
-		console.log(whiskies);
 		return (
 			<div id="map-container">
-				<h2 id="map-text">Travelling the world, one dram at a time</h2>
-				<Map whiskies={whiskies} handleClick={this.handleClick} />
+				<h2 id="map-text">Complete Collection</h2>
+
+				<RecordsTable whiskies={whiskies} handleClick={this.handleClick} />
 
 				<Modal
 					show={this.state.showModal}
 					whiskey={this.state.selectedWhiskey}
 					handleClose={this.handleClose}
 				/>
-
-				{/* I really need to reset state rather than a hard reload */}
-				<button onClick={() => window.location.reload()}>Reset</button>
 			</div>
 		);
 	}
 }
-export default MapPage;
+export default CollectionPage;

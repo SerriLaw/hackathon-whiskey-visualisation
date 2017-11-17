@@ -77,6 +77,20 @@ const Records = props =>
 					]
 				}
 			]}
+			getTrProps={(state, rowInfo, column, instance) => {
+				return {
+					onClick: e => {
+						console.log('Cell - onMouseEnter', {
+							state,
+							rowInfo,
+							column,
+							instance,
+							event: e
+						});
+						props.handleClick(rowInfo.original);
+					}
+				};
+			}}
 			defaultSorted={[
 				{
 					id: 'overall',
@@ -87,7 +101,7 @@ const Records = props =>
 					desc: false
 				}
 			]}
-			defaultPageSize={10}
+			defaultPageSize={20}
 			className="-striped -highlight"
 		/>
 	</div>;
