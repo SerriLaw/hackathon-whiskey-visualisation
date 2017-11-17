@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import whiskies from '../../config/whiskey.json';
 import { PieChart, Pie, Legend, Tooltip, Cell } from 'recharts';
 import './styles.css';
 import whiskey from '../../config/whiskey.json';

@@ -5,6 +5,7 @@ import HomePage from './home';
 import MapPage from './map';
 import ErrorPage from './error';
 import WhiskeyRatings from './whiskey-ratings';
+import WhiskeyCountry from './whiskey-by-country';
 import WhiskeyColors from './whiskey-colors';
 import WhiskeyTasteProfile from './whiskey-taste-profile';
 
@@ -19,6 +20,11 @@ const AppRouter = props => {
 				component={WhiskeyRatings}
 			/>
 			<ScrollTopRoute exact path="/whiskey-colors" component={WhiskeyColors} />
+			<ScrollTopRoute
+				exact
+				path="/whiskey-by-country"
+				component={WhiskeyCountry}
+			/>
 			<ScrollTopRoute
 				exact
 				path="/whiskey-taste-profile"
