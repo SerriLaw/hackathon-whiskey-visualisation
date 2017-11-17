@@ -28,7 +28,7 @@ class WhiskeyTasteProfilePage extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Flavour Map</h2>
+				<h2>Taste Profile</h2>
 				<div className="container">
 					<div className="row">
 						<h3>SMOKY</h3>
@@ -40,7 +40,7 @@ class WhiskeyTasteProfilePage extends Component {
 						<div className="mrow">
 							<ScatterChart
 								width={800}
-								height={700}
+								height={800}
 								margin={{ right: 20, left: 20 }}
 							>
 								<XAxis
