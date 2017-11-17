@@ -5,7 +5,7 @@ import './styles.css';
 
 const filterMethod = (filter, row) => row[filter.id] >= filter.value;
 
-const Records = props =>
+const Records = props => (
 	<div>
 		<ReactTable
 			data={props.whiskies}
@@ -67,16 +67,31 @@ const Records = props =>
 						{
 							Header: '',
 							maxWidth: 50,
-							Cell: cellInfo =>
+							Cell: cellInfo => (
 								<a href={cellInfo.original.url} target="_blank">
 									<span role="img" aria-label="link">
 										🔗
 									</span>
 								</a>
+							)
 						}
 					]
 				}
 			]}
+			getTrProps={(state, rowInfo, column, instance) => {
+				return {
+					onClick: e => {
+						console.log('Cell - onMouseEnter', {
+							state,
+							rowInfo,
+							column,
+							instance,
+							event: e
+						});
+						props.handleClick(rowInfo.original);
+					}
+				};
+			}}
 			defaultSorted={[
 				{
 					id: 'overall',
@@ -87,8 +102,9 @@ const Records = props =>
 					desc: false
 				}
 			]}
-			defaultPageSize={10}
+			defaultPageSize={20}
 			className="-striped -highlight"
 		/>
-	</div>;
+	</div>
+);
 export default Records;
