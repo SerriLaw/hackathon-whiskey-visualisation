@@ -16,6 +16,9 @@ const Header = () => (
 					<a href="/map">Whiskey Map</a>
 				</li>
 				<li>
+					<a href="/whiskey-by-country">Bottle Nationality</a>
+				</li>
+				<li>
 					<a href="/whiskey-ratings">Sorted by Ratings</a>
 				</li>
 				<li>

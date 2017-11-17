@@ -1,0 +1,83 @@
+#map-container {
+	text-align: center;
+}
+
+#map-text {
+	margin: 30px 0 30px 0;
+}
+
+.data-url {
+	text-decoration: underline;
+}
+
+p.data {
+	width: 80%;
+	margin: 2px auto;
+	text-align: center;
+}
+
+.colorSwatch {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.close {
+	background-color: #fff;
+	border-radius: 15px;
+	height: 30px;
+	width: 30px;
+	margin-top: 5px;
+	margin-left: 93%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.colorLine {
+	width: 80%;
+	text-align: center;
+	margin: 15px auto 5px auto;
+}
+
+table.score {
+	width: 80%;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 14px;
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+td.data.score {
+	padding: 4px;
+	border: 1px solid #ccc;
+}
+
+.data-overall {
+	padding: 6px;
+	font-size: 16px;
+}
+
+.data-name {
+	padding: 0;
+	margin: 10px 0 10px 0;
+}
+
+.data-colour {
+	display: inline-block;
+	margin-left: 5px;
+	text-transform: capitalize;
+}
+
+.data-colour:first-of-type {
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 5px;
+	text-transform: capitalize;
+}
+
+.data-type {
+	text-transform: capitalize;
+}
