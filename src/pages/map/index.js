@@ -58,7 +58,9 @@ class MapPage extends Component {
 				/>
 
 				{/* I really need to reset state rather than a hard reload */}
-				<button onClick={() => window.location.reload()}>Reset</button>
+				<button onClick={() => window.location.reload()} className="reset">
+					Reset Map
+				</button>
 			</div>
 		);
 	}
