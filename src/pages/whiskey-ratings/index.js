@@ -30,27 +30,7 @@ class WhiskeyRatingsPage extends Component {
 		return (
 			<div>
 				<h2>Whiskey Ratings</h2>
-				<div className="topThree">
-					<h3>Our Top 3 Whiskey's</h3>
-					<table>
-						<thead>
-							<tr>
-								<td>Rank</td>
-								<td>Whiskey</td>
-							</tr>
-						</thead>
-						<tbody>
-							{this.state.topTen.map(function(item, index) {
-								return (
-									<tr key={index}>
-										<td>{index + 1}</td>
-										<td>{item.name}</td>
-									</tr>
-								);
-							})}
-						</tbody>
-					</table>
-				</div>
+
 				<LineChart
 					width={1000}
 					height={600}
@@ -58,7 +38,7 @@ class WhiskeyRatingsPage extends Component {
 					margin={{ top: 30, right: 0, left: 0, bottom: 30 }}
 				>
 					<XAxis dataKey="name" hide={true} padding={{ left: 20, right: 20 }} />
-					<YAxis hide={false} domain={[0, 10]} />
+					<YAxis hide={false} domain={[1, 10]} />
 					<CartesianGrid strokeDasharray="3 3" />
 					<Tooltip />
 					<Line
@@ -103,6 +83,28 @@ class WhiskeyRatingsPage extends Component {
 					<div className="legendName">
 						<span className="icon icon4" />Overall
 					</div>
+				</div>
+
+				<div className="topThree">
+					<h3>Our Top 3 Whiskeys</h3>
+					<table>
+						<thead>
+							<tr>
+								<td>Rank</td>
+								<td>Whiskey</td>
+							</tr>
+						</thead>
+						<tbody>
+							{this.state.topTen.map(function(item, index) {
+								return (
+									<tr key={index}>
+										<td>{index + 1}</td>
+										<td>{item.name}</td>
+									</tr>
+								);
+							})}
+						</tbody>
+					</table>
 				</div>
 			</div>
 		);
